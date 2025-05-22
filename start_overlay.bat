@@ -34,7 +34,7 @@ if %errorlevel% neq 0 (
 )
 
 REM  update dependencies.
-echo Installeren/updaten van dependencies: %REQUIREMENTS%
+echo Getting dependencies: %REQUIREMENTS%
 pip install --upgrade pip >nul
 pip install %REQUIREMENTS%
 if %errorlevel% neq 0 (
