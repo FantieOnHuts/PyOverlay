@@ -19,10 +19,12 @@ The initial motivation for this project was to investigate the feasibility of us
 *   **Always-on-Top Window:** The overlay window stays on top of other applications.
 *   **Web Engine Integration:** Uses `QWebEngineView` (based on Chromium) to display web content (defaults to Google.com).
 *   **Adjustable Opacity:** Default opacity is semi-transparent (85%).
-*   **Toggle Visibility (Opacity):** *Broken in version of 22-5*
+*   **Toggle Visibility (Opacity):**
     *   Press `F9` to toggle the window between its default opacity and nearly invisible (1% opacity).
 *   **Toggle Click-Through:**
     *   Press `F8` to toggle whether mouse clicks pass through the overlay window to the application underneath or interact with the overlay window.
+*   **Kill switch:**
+    *   Press `F10` twice to quit the app.
 
 ## How It Works (Technical Overview)
 
@@ -66,7 +68,6 @@ The application uses:
 *   **Detection:** This is a basic implementation. Advanced proctoring software might detect the presence of such an overlay, the Python interpreter, or the `keyboard` hook.
 *   **Hardcoded URL:** The initial URL (Google.com) is hardcoded. You'll need to modify the source code (`self.browser.setUrl(QUrl("https://www.google.com"))`) to change it.
 *   **Error Handling:** While some error handling is present (e.g., for `keyboard` import), it can be further improved.
-*   **Opacity still broken** The opacity is being adjusted but the window stays in the opacity it is started at.
 
 ## Future Ideas & Potential Enhancements
 
