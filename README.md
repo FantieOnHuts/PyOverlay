@@ -50,7 +50,7 @@ The application uses:
 1.  **Clone the repository or download the Python script.**
     ```bash
     # If you're using Git
-    git clone <your-repo-url>
+    git clone https://github.com/FantieOnHuts/PyOverlay.git
     cd <your-repo-directory>
     ```
 
